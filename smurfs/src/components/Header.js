@@ -1,0 +1,23 @@
+
+////////////////////////////////////////
+
+import React from 'react'
+
+////////////////////////////////////////
+
+function Header() {
+  return (
+    <header>
+      <h1>Welcome To Our Village</h1>
+      <h3>The Redux Version</h3>
+    </header>
+  )
+}
+
+////////////////////////////////////////
+
+export default Header;
+
+////////////////////////////////////////
+
+/* Complete */

@@ -1,0 +1,24 @@
+
+////////////////////////////////////////
+
+import React from 'react'
+
+////////////////////////////////////////
+
+function Footer() {
+  return (
+    <footer>
+        <br/>
+        Dedicated To Our Founder, Lambda School
+        <br/>
+    </footer>
+  )
+}
+
+////////////////////////////////////////
+
+export default Footer;
+
+////////////////////////////////////////
+
+/* Complete */
