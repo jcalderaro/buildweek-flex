@@ -40,11 +40,16 @@ class AddSmurf extends Component {
       <form onSubmit={this.smurfy}>
 
         <input name='name' type='text' value={this.state.name} onChange={this.setInput}
-        placeholder="Smurf's Name" /><br/>
+        placeholder="Fist Name" /><br/>
+        
+        <input name='name' type='text' value={this.state.name} onChange={this.setInput}
+        placeholder="Last Name" /><br/>
+
         <input name='age' type='text' value={this.state.age} onChange={this.setInput}
-        placeholder="Smurf's Age" /><br/>
+        placeholder="Phone Number" /><br/>
+        
         <input name='height' type='text' value={this.state.height} onChange={this.setInput}
-        placeholder= "Smurf's Height" /><br/>
+        placeholder= "Affiliation" /><br/>
 
         <button onClick={ () => {
             this.setState({
@@ -57,7 +62,7 @@ class AddSmurf extends Component {
                 name: this.state.name, 
                 age : this.state.age,
                 height:this.state.height,
-                })} }>Add Smurf</button>
+                })} }>Add A New Contact</button>
       </form>
     )
   }

@@ -20,6 +20,22 @@ header {
   color: white;
 }
 
+nav {
+  background-color: #a0001e;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+
 .smurf {
   border : 5px groove black;
   background-color: #a0001e;

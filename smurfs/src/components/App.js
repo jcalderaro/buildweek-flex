@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {connect} from 'react-redux';
 import Header from './Header';
+import Navbar from './Navbar';
 import Footer from './Footer';
 import SmurfVillage from './SmurfVillage';
 import {getSmurfs} from '../actions';
@@ -18,6 +19,7 @@ class App extends Component {
     return (
       <div className="App">
        <Header/>
+       <Navbar/>
        <AddSmurf/>
        <SmurfVillage/>
        <Footer/>       
