@@ -1,0 +1,21 @@
+
+////////////////////////////////////////
+
+import React from 'react'
+
+////////////////////////////////////////
+
+function Header() {
+  return (
+    <header>
+      <h1>Welcome To Your Contact List</h1>
+      <h2>The Random Act Generator</h2>
+    </header>
+  )
+}
+
+////////////////////////////////////////
+
+export default Header;
+
+////////////////////////////////////////

@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: black;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.village {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid #a0001e;
+}
+
+header {
+  background-color: #a0001e;
+  color: white;
+}
+
+nav {
+  background-color: #a0001e;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+
+.smurf {
+  border : 5px groove black;
+  background-color: #a0001e;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  flex-basis: 180px;
+}
+
+form {
+  border: 1px solid #a0001e;
+  padding: 10px;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+/* Complete */
