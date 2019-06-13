@@ -2,7 +2,6 @@
 
 
 Commit your code regularly and meaningfully. 
-This helps you return to old code for any number of reasons.
 
 
 ## Build Week Project #2 - - Flex Week - - Random Act Generator
@@ -10,17 +9,17 @@ This helps you return to old code for any number of reasons.
 
     MVP Score Requirements :
 
-                -Onboarding process for a new user
+            -Onboarding process for a new user
 
-                -Navigation present on all pages 
+            -Navigation present on all pages 
 
-                - Ability for user to add in their contacts manually.
+            - Ability for user to add in their contacts manually.
 
-                -Page to view a list of their added conatcts, and edit or delete them.
+            -Page to view a list of their added conatcts, and edit or delete them.
 
-                -Page with a list of service ideas that comes with the app that can be added to and edited by the user.
+            -Page with a list of service ideas that comes with the app that can be added to and edited by the user.
 
-                -Page (with some sort of event listener) to randomize contact and random act to show the user. 
+            -Page (with some sort of event listener) to randomize contact and random act to show the user. 
 
 
 ## Sample Structure 

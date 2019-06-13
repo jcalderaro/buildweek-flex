@@ -26,8 +26,8 @@ export function getSmurfs(url) {
 export function addSmurf(smurf) {
   console.log('addSmurfs has triggered.');
   return (dispatch) => {
-    dispatch({type: "LOAD"});
-    axios.post('https://localhost:3333/smurfs/',smurf)
+    dispatch({type: "ADD"});
+    axios.post('https://localhost:3333/smurfs',smurf)
          .then( res => {
             console.log("post successful ", res.data[res.data.length-1]);
             dispatch({

@@ -16,10 +16,10 @@ class SmurfVillage extends React.Component {
     render() {
         return (
             <div className='village'>
-                {this.props.smurfs.map( (smurf,i) => <Smurf key={i} smurf={smurf} /> )}
+               
             </div>
         )
-    }
+     }
 }
 
 function mapStateToProps(state) {
