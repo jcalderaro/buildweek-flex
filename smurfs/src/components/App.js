@@ -17,7 +17,22 @@ const axios = require("axios")
 ////////////////////////////////////////
 
 class App extends Component {
-  state={smurfs:[]}
+  
+constructor(){
+  super()
+  this.state={smurfs:[]}
+}
+
+componentDidMount() {
+  console.log(4)
+    axios.get('http://localhost:3333/smurfs/')
+    .then((response)=> {
+      console.log(response)
+      this.setState({smurfs: response.data})
+    })
+    .catch((err)=> console.log(err))
+  }
+
   render() {
     return (
       <div className="App">
@@ -25,14 +40,10 @@ class App extends Component {
        <Navbar/>
        <AddSmurf/>
        <Smurf/>
-       <SmurfVillage/>
+       <SmurfVillage smurfs= {this.state.smurfs}/>
        <Footer/>       
       </div>
     );
-  }
-
-  componentDidMount() {
-    axios.get('https://localhost:3000/smurfs/').then((response)=> console.log(response)).catch((err)=> console.log(err))
   }
 }
 

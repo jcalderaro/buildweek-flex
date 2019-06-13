@@ -5,12 +5,12 @@ import axios from 'axios';
 
 ////////////////////////////////////////
 
-export function getSmurfs(url) {
+export function getSmurfs() {
 
   console.log('getSmurfs has triggered. ');
   return (dispatch) => {
     dispatch({type : "LOAD"});
-    axios.get(url)
+    axios.get('http:://localhost:3333/smurfs')
          .then( res => {
            console.log("API get request succeeded.: ", res.data);
            dispatch({type: "SUCCESS", payload: res.data})
@@ -27,7 +27,7 @@ export function addSmurf(smurf) {
   console.log('addSmurfs has triggered.');
   return (dispatch) => {
     dispatch({type: "ADD"});
-    axios.post('https://localhost:3333/smurfs',smurf)
+    axios.post('http://localhost:3333/smurfs',smurf)
          .then( res => {
             console.log("post successful ", res.data[res.data.length-1]);
             dispatch({
@@ -44,8 +44,8 @@ export function remove(smurf) {
   console.log('remove has triggered', smurf);
 
   return (dispatch) => {
-    dispatch({type: "LOAD"});
-    axios.delete(`https://localhost:3000/smurfs/${smurf.id}`)
+    dispatch({type: "REMOVE"});
+    axios.delete(`https://localhost:3333/smurfs'${smurf.id}`)
          .then( res => {
            console.log( 'delete success: ', res.data);
            dispatch({type: "REMOVE", payload: smurf.id})
